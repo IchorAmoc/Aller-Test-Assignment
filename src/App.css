@@ -1,0 +1,25 @@
+header {
+  background-color: rgb(206, 206, 206);
+  width: 100vw;
+  height: 10vh;
+}
+
+main {
+  background-color: white;
+  min-height: 90vh;
+}
+
+footer {
+  background-color: rgb(206, 206, 206);
+  width: 100vw;
+  min-height: 10rem;
+  position: relative;
+  color: rgb(63, 63, 63);
+}
+
+footer div img {
+  width: 20vw;
+  position: absolute;
+  right: .5rem;
+  bottom: .5rem;
+}
