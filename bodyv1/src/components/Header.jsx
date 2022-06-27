@@ -1,20 +1,19 @@
 import { useEffect, useState } from "react";
 
 export const Header = ({logo}) => {
-    const [navShadow, setNavShadow] = useState(false)
+    const [scrolledNav, setScrolledNav] = useState(false)
 
     useEffect(() => {
         const handleScroll = event => {
           //console.log('window.scrollY', window.scrollY);
           if(window.scrollY >= 50) {
             //console.log('yes')
-            setNavShadow(true)
+            setScrolledNav(true)
           }
           if(window.scrollY < 49) {
-            setNavShadow(false)
+            setScrolledNav(false)
           }
         }
-    
     
         window.addEventListener('scroll', handleScroll);
         return () => {
@@ -22,10 +21,12 @@ export const Header = ({logo}) => {
         }
       }, [])
     return (
-        <header id={navShadow ? 'scrolled' : ''}>
+        <header id={scrolledNav ? 'scrolled' : ''}>
             <figure id="logo">
-                <a href="https://www.aller.no/">
-                    <img src={logo} alt="Aller" />
+                <a href="#">
+                    Nyheter
+                {/* <a href="https://www.aller.no/"> */}
+                    {/* <img src={logo} alt="Aller" /> */}
                 </a>
             </figure>
         </header>

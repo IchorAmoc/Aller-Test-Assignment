@@ -12,15 +12,11 @@ import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { ScrollToTop } from './components/ScrollToTop';
 import { PageDoesNotExist } from './components/PageDoesNotExist';
+import { ToTop } from './components/ToTop';
 
 function App() {
-  const handleScroll = event => {
-    console.log('scrollTop: ', event.currentTarget.scrollTop);
-    console.log('offsetHeight: ', event.currentTarget.offsetHeight);
-  };
-
   return (
-    <div className="App" onScroll={handleScroll}>
+    <div className="App">
       <div id='topAnchor'></div>
       <Router>
         <ScrollToTop>
@@ -34,7 +30,7 @@ function App() {
             
 
           </main>
-
+          <ToTop />
           <Footer logo={allerLogo} />
         </ScrollToTop>
       </Router>
@@ -43,3 +39,16 @@ function App() {
 }
 
 export default App;
+
+
+/*
+TODO:
+- To top button on right side
+- Edit button
+- Input field
+- Save new input functionality
+  - Return to original input?
+- Fancy animation on hover? For fun if easy
+  - Maybe on logo as well? Pop-up with solid box-shadow?
+
+*/
