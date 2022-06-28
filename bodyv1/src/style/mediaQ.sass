@@ -1,7 +1,60 @@
-@media (max-width: 1200px) 
-    #articleSection
-        max-width: 900px
-        margin-top: 6rem
-        .articleColumn
-            article
+@use 'variables' as *
 
+@media (max-width: 1250px) 
+    body
+        #toTop
+            right: 50%
+            transform: translateZ(-50%)
+            bottom: 3vh
+        header
+            background: $red
+            figure
+
+                a
+                    color: white
+                    text-decoration: 3px underline #2b2b2b00
+                    &:hover
+                        text-decoration: underline white 3px
+        #articleSection
+            max-width: 98%
+            width: fit-content
+            margin-top: 6rem
+            .articleColumn
+                article
+                    .edit
+                        font-size: 1.7rem
+                    figure
+                        a
+                            h3
+                                font-size: 2rem
+@media (max-width: 1220px) 
+
+@media (max-width: 900px) 
+    body
+        #articleSection
+            .articleColumn
+                article
+                    .edit
+                    figure
+                        a
+                            h3
+                                font-size: 1.5rem
+@media (max-width: 750px) 
+    body
+        #articleSection
+            .articleColumn
+                article
+                    .edit
+                    figure
+                        a
+                            h3
+@media (max-width: 500px) 
+    body
+        #articleSection
+            .articleColumn
+                article
+                    .edit
+                    figure
+                        a
+                            h3
+                                font-size: 1rem

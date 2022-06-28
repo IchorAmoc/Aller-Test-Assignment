@@ -4,8 +4,12 @@
     margin-top: 10rem
     display: grid
     grid-auto-flow: row
-    grid-row-gap: 5px
+    grid-row-gap: .5rem
 
+    .longer
+        grid-column-gap: .25rem
+    .shorter
+        grid-column-gap: .5rem
     .articleColumn
         display: grid
         grid-auto-flow: column
@@ -27,12 +31,10 @@
                     color: $red
             a
                 width: 100%
-                -webkit-text-decoration: underline 3px black
                 text-decoration: underline 3px black
                 transition: .2s
             &:hover
                 a
-                    -webkit-text-decoration: underline 3px white
                     text-decoration: underline 3px white
 
             figure
@@ -50,7 +52,7 @@
                         padding: .5rem
                         margin-top: -4px
                         margin-bottom: 0
-                        font-size: 4vh
+                        font-size: 3rem
                         line-height: 1
             .editTitleContainer
                 position: absolute

@@ -11,11 +11,16 @@ export const Article = ({ data }) => {
     const orgTitle = data.title
     const [title, setTitle] = useState(data.title)
     let width;
+    
 
-
-    if(window.innerWidth <= 1200) width = (data.width * 100) * 0.99
-    if(window.innerWidth > 1200) width = (data.width * 100) * 0.99
-    console.log(window.innerWidth)
+    // There is 100% a better way to do this, but yeah.
+    if(window.innerWidth >= 1250) width = (data.width * 100)
+    if(window.innerWidth <= 1220) width = (data.width * 70) 
+    if(window.innerWidth <= 900) width = (data.width * 60) 
+    if(window.innerWidth <= 750) width = (data.width * 50) 
+    if(window.innerWidth <= 630) width = (data.width * 40) 
+    if(window.innerWidth <= 510) width = (data.width * 30)  // Uuuuh
+    if(window.innerWidth <= 400) width = (data.width * 20)  // Good god no
 
     // Changes only visible for the user,
     // API call to change for all users.

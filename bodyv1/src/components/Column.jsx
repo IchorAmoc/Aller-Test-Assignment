@@ -5,7 +5,7 @@ export const Column = ({ data }) => {
 
     if (!data) return <Loading />
     return (
-        <div className="articleColumn">
+        <div className={data.columns.length >= 3 ? "articleColumn longer" : "articleColumn shorter"}>
             {data.columns.map((article, x) => (
                 <Article data={article} key={`article ${x}`} />
             ))}
