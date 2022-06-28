@@ -4,37 +4,35 @@
     margin-top: 10rem
     display: grid
     grid-auto-flow: row
-    grid-gap: .5rem
+    grid-row-gap: 5px
 
     .articleColumn
-        background: purple
-        width: 1200px
         display: grid
         grid-auto-flow: column
-        align-content: space-around
         justify-content: space-between
-        grid-gap: .5rem
 
         article
             position: relative
             .edit
                 cursor: pointer
-                color: transparentize($red, .6 )
+                color: transparentize($red, .7)
                 font-size: 2rem
                 position: absolute
-                top: 0
+                top: .1rem
                 z-index: 2
-                right: 2%
+                right: .1rem
                 transition: .3s ease-in-out
                 filter: drop-shadow(1px 1px 2px #010101af)
                 &:hover
                     color: $red
             a
                 width: 100%
+                -webkit-text-decoration: underline 3px black
                 text-decoration: underline 3px black
                 transition: .2s
             &:hover
                 a
+                    -webkit-text-decoration: underline 3px white
                     text-decoration: underline 3px white
 
             figure

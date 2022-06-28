@@ -2,6 +2,7 @@ import { Loading } from "./Loading"
 import { Article } from "./Article"
 
 export const Column = ({ data }) => {
+
     if (!data) return <Loading />
     return (
         <div className="articleColumn">

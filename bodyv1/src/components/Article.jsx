@@ -10,6 +10,12 @@ export const Article = ({ data }) => {
     const [edit, toggleEdit] = useState(false)
     const orgTitle = data.title
     const [title, setTitle] = useState(data.title)
+    let width;
+
+
+    if(window.innerWidth <= 1200) width = (data.width * 100) * 0.99
+    if(window.innerWidth > 1200) width = (data.width * 100) * 0.99
+    console.log(window.innerWidth)
 
     // Changes only visible for the user,
     // API call to change for all users.
@@ -17,13 +23,13 @@ export const Article = ({ data }) => {
     //         could be replaced with history function idk
 
     return (
-        <article style={{width: `${data.width}00px`}}>
+        <article>
             <IoIosSettings className="edit" onClick={(e) => toggleEdit(!edit)} />
-            <figure>
+            <figure style={{ width: `${width}px` }}>
                 <a href={data.url}>
-                    <img src={data.imageUrl + `&width=${data.width}00`} alt="#" />
+                    <img src={data.imageUrl + `&width=${width}`} alt="#" />
+                    <h3>{title}</h3>
                 </a>
-                <a href={data.url}><h3>{title}</h3></a>
             </figure>
             <TitleChange
                 edit={edit}
