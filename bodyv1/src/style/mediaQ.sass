@@ -1,6 +1,6 @@
 @use 'variables' as *
 
-@media (max-width: 1250px) 
+@media (max-width: 1250px)
     body
         #toTop
             right: 50%
@@ -19,24 +19,49 @@
             width: fit-content
             .articleColumn
                 article
-                    .edit
-                        font-size: 1.7rem
+                    .editTitleContainer
+                        form
+                            margin: auto
+                            top: 1rem
+                            left: auto
+                            width: 90%
+                            font-size: 1.2rem
+                            label
+                                font-size: 16px
+                            input
+                                font-size: 16px
+                                width: 98%
+                                height: fit-content
+                                padding: 0
+                            button
+                                position: absolute
+                                top: 3.5rem
+                                background: $red
+                                color: white
+                                font-size: 14px
+                                padding: .25em .5em
+                        .resetTitle
+                            bottom: .5rem
+                            right: .5rem
+                            font-size: 14px
+                            padding: .25em .5em
                     figure
                         a
                             h3
                                 font-size: 2rem
-@media (max-width: 1220px) 
 
-@media (max-width: 900px) 
+@media (max-width: 900px)
     body
         #articleSection
             .articleColumn
                 article
+                    .edit
+                        font-size: 1.5rem
                     figure
                         a
                             h3
                                 font-size: 1.5rem
-@media (max-width: 750px) 
+@media (max-width: 750px)
     body
         #articleSection
             .articleColumn
@@ -45,11 +70,35 @@
                         a
                             h3
                                 font-size: 1rem
-@media (max-width: 500px) 
+@media (max-width: 500px)
     body
         #articleSection
             .articleColumn
                 article
+                    .editTitleContainer
+                        form
+                            left: auto
+                            width: 94%
+                            font-size: .9rem
+                            label
+                                font-size: .9rem
+                            input
+                                font-size: .9rem
+                                width: 98%
+                                height: fit-content
+                                padding: 0
+                            button
+                                position: absolute
+                                top: 3.5rem
+                                background: $red
+                                color: white
+                                font-size: .9rem
+                                padding: .25em .5em
+                        .resetTitle
+                            bottom: .2rem
+                            right: .2rem
+                            font-size: .9rem
+                            padding: .25em .5em
                     figure
                         a
                             h3
