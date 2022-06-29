@@ -1,7 +1,6 @@
 #articleSection
     max-width: 1200px
     margin: auto
-    margin-top: 10rem
     display: grid
     grid-auto-flow: row
     grid-row-gap: .5rem
@@ -35,7 +34,7 @@
                 transition: .2s
             &:hover
                 a
-                    text-decoration: underline 3px white
+                    text-decoration: underline .35vw white
 
             figure
                 height: 100%
@@ -48,6 +47,8 @@
                 position: relative
                 a
                     h3
+                        overflow-wrap: break-word
+                        hyphens: auto
                         color: white
                         padding: .5rem
                         margin-top: -4px

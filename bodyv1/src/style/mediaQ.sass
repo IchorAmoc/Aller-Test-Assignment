@@ -4,12 +4,11 @@
     body
         #toTop
             right: 50%
-            transform: translateZ(-50%)
+            transform: translateX(50%)
             bottom: 3vh
         header
             background: $red
             figure
-
                 a
                     color: white
                     text-decoration: 3px underline #2b2b2b00
@@ -18,7 +17,6 @@
         #articleSection
             max-width: 98%
             width: fit-content
-            margin-top: 6rem
             .articleColumn
                 article
                     .edit
@@ -34,7 +32,6 @@
         #articleSection
             .articleColumn
                 article
-                    .edit
                     figure
                         a
                             h3
@@ -44,17 +41,16 @@
         #articleSection
             .articleColumn
                 article
-                    .edit
                     figure
                         a
                             h3
+                                font-size: 1rem
 @media (max-width: 500px) 
     body
         #articleSection
             .articleColumn
                 article
-                    .edit
                     figure
                         a
                             h3
-                                font-size: 1rem
+                                font-size: .9rem
