@@ -10,6 +10,7 @@
             background: $red
             figure
                 a
+                    font-size: 4rem
                     color: white
                     text-decoration: 3px underline #2b2b2b00
                     &:hover
@@ -70,8 +71,27 @@
                         a
                             h3
                                 font-size: 1rem
+        footer
+            height: fit-content
+            .content
+                padding-bottom: 6rem
+                text-align: center
+                div
+                    figure
+                        margin: auto
+                        max-width: 20rem
+                        width: 90%
+                        position: relative
+                        top: 0
+
+                    img
+                        width: 100%
 @media (max-width: 500px)
     body
+        header
+            figure
+                a
+                    font-size: 3rem
         #articleSection
             .articleColumn
                 article
