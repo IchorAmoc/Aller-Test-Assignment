@@ -10,8 +10,7 @@ export const Footer = ({ logo }) => {
                         <img src={logo} alt="Aller Media" />
                         <p>Aller Media</p>
                     </figure>
-                    <p><a href="#">Github kildekode</a></p>
-                    <p><a href="#">Vilde G.B. Epost</a></p>
+                    <p><a href="https://github.com/IchorAmoc/Aller-Test-Assignment/tree/main/bodyv1">Github kildekode</a></p>
                 </div>
             </div>
         </footer>
