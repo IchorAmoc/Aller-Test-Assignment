@@ -7,15 +7,13 @@ import { IoIosSettings } from "react-icons/io";
 import { TitleChange } from "./TitleChange";
 
 export const Article = ({ data }) => {
-    
-
     const [edit, toggleEdit] = useState(false)
     const orgTitle = data.title
     const [title, setTitle] = useState(data.title)
     let width;
 
-
     // There is 100% a better way to do this, but yeah.
+    // Checks viewport width to determine the width the image for the article will render
     if (window.innerWidth >= 1250) width = (data.width * 100)
     if (window.innerWidth <= 1220) width = (data.width * 70)
     if (window.innerWidth <= 900) width = (data.width * 60)
